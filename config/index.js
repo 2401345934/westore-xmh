@@ -9,7 +9,6 @@ const config = {
   },
   sourceRoot: 'src',
   outputRoot: 'dist',
-  plugins: ['taro-plugin-pinia'],
   defineConstants: {
   },
   copy: {
@@ -18,6 +17,18 @@ const config = {
     options: {
     }
   },
+  plugins: [
+    ['taro-plugin-pinia'],
+    ['@tarojs/plugin-framework-vue3', {
+      mini: {
+        compilerOptions: {
+          isCustomElement: tag => tag.includes("ec-canvas"),
+          whitespace: 'preserve'
+          // ...
+        }
+      }
+    }]
+  ],
   framework: 'vue3',
   mini: {
     webpackChain (chain) {

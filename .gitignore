@@ -1,5 +1,6 @@
 dist/
 deploy_versions/
+miniprogram_npm/
 .temp/
 .rn_temp/
 node_modules/
