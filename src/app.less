@@ -1,1 +1,7 @@
 @import "@nutui/nutui-taro/dist/style.css";
+
+// iPhoneX 底部横线适配
+.safe-area-bottom {
+  padding-bottom: constant(safe-area-inset-bottom);
+  padding-bottom: env(safe-area-inset-bottom);
+}
