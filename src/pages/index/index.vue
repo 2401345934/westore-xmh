@@ -1,9 +1,9 @@
 <template>
   <view class="index">
     <Counter />
-    <van-button type="primary">按钮</van-button>
     12313
   </view>
+  <nut-button type="primary">主要按钮</nut-button>
 </template>
 
 <script setup>

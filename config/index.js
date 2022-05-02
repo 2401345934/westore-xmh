@@ -1,8 +1,9 @@
 const config = {
   projectName: 'westore-xmh',
   date: '2022-5-2',
-  designWidth: 750,
+  designWidth: 375,
   deviceRatio: {
+    375: 2,
     640: 2.34 / 2,
     750: 1,
     828: 1.81 / 2
@@ -19,6 +20,7 @@ const config = {
   },
   plugins: [
     ['taro-plugin-pinia'],
+    ['@tarojs/plugin-html'],
     ['@tarojs/plugin-framework-vue3', {
       mini: {
         compilerOptions: {
